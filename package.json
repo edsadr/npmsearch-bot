@@ -1,0 +1,35 @@
+{
+  "name": "npmsearch-slack-webhook",
+  "version": "1.0.0",
+  "description": "A serverless Slack outgoing Webhook implemented with Webtask.io searching NPM packages ",
+  "main": "index.js",
+  "scripts": {
+    "create": "wt create --name npmsearch-slack-webhook --parse-body index.js",
+    "debug": "wt debug --parse-body index.js",
+    "edit": "wt edit npmsearch-slack-webhook",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "update": "wt update npmsearch-slack-webhook index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:edsadr/npmsearch-slack-webhook.git"
+  },
+  "keywords": [
+    "Slack",
+    "Webhook",
+    "Npmsearch"
+  ],
+  "author": "edsadr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edsadr/npmsearch-slack-webhook/issues"
+  },
+  "homepage": "https://github.com/edsadr/npmsearch-slack-webhook#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
